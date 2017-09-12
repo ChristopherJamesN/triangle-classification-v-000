@@ -1,10 +1,19 @@
 class Triangle
 
+  attr_accessor :side1, :side2, :side3
+
+  def initialize(side1, side2, side3)
+    @side1 = side1
+    @side2 = side2
+    @side3 = side3
+  end
+
+
 end
 
 class TriangleError < StandardError
 
-  def message 
+  def message
     "you must give the get_married method an argument of an instance of the person class!"
   end
 
